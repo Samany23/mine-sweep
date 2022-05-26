@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lemonada:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  /> -->
     <link rel="stylesheet" href="css/style.css" />
     <title>mine-sweep</title>
   </head>
@@ -15,8 +26,27 @@
       </div>
       <button onclick="restart()">restart</button>
     </div>
+    <div class="info-panel">
+      <span class="lives">
+        <h2>lives left - 2</h2>
+      </span>
+      <button data-level="4" onclick="setDificultyLevel(this)">easy</button>
+      <button data-level="8" onclick="setDificultyLevel(this)">hard</button>
+      <button data-level="12" onclick="setDificultyLevel(this)">extreme</button>
+    </div>
+    <div class="player-info">
+      <span class="time">
+        <h2>time</h2>
+      </span>
+      <span class="open-cells">
+        <h2>open cells - 0</h2>
+      </span>
+      <span class="flags">
+        <h2>flags placed - 0</h2>
+      </span>
+    </div>
     <div onclick="restart()" class="smily"></div>
-    <div class="game-container">hello</div>
+    <div class="game-container"></div>
     <script src="./js/main.js"></script>
     <script src="./js/utils.js"></script>
   </body>
